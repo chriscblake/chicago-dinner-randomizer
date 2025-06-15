@@ -4,7 +4,7 @@ import pandas as pd
 
 st.title("Chicago Dinner Picker")
 
-df = pd.read_csv("data/dataset.csv")
+df = pd.read_csv("dataset.csv")
 cuisines = sorted(df['cuisine'].unique())
 
 if 'step' not in st.session_state:
